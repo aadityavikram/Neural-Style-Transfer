@@ -3,10 +3,7 @@ import torch
 import torchvision
 import pandas as pd
 from time import time, strftime, gmtime
-from style_transfer.utility import load_data
-from style_transfer.utility import save_image
-from style_transfer.utility import create_gif
-from style_transfer.utility import combined_result
+from utility import load_data, save_image, create_gif, combined_result
 
 
 def extract_features(x, cnn, device='cuda'):
